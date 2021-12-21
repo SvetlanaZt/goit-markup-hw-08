@@ -1,0 +1,123 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  align-items: center;
+  width: 1600px;
+}
+.container-header {
+  display: flex;
+  height: 80px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  &__link {
+    font-family: Raleway;
+    margin-right: 93px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
+  &__logo {
+    color: var(--accent-color);
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 0;
+  }
+}
+
+.logo {
+  color: var(--first-text-color);
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  display: list-item;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.container-header__item .active::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.container-header__link-svg {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 10px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-p-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.container-header__link-svg:hover .mail-svg,
+.container-header__link-svg:focus .mail-svg {
+  fill: var(--accent-color);
+}
+
+.container-header__icon {
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.container-header__icon:hover .container-header__svg {
+  fill: #2196f3;
+}
+.container-header__svg {
+  fill: #757575;
+}

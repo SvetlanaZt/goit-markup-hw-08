@@ -1,0 +1,38 @@
+.portfolio {
+  margin-top: 94px;
+}
+.container-portfolio {
+  width: 1200px;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-title {
+  display: none;
+}
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-family: Roboto;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  color: var(--first-text-color);
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--button-color);
+  }
+}
