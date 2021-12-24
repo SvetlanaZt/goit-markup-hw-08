@@ -1,14 +1,34 @@
 .header {
   border-bottom: 1px solid #ececec;
   align-items: center;
-  width: 1600px;
+  @media screen and(max-width:768px) {
+    display: flex;
+  }
+
+  /* width: 1600px; */
 }
 .container-header {
   display: flex;
+  justify-content: space-between;
   height: 60px;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and(min-width:768px) {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__contacts {
+    @media screen and(min-width:1200px) {
+      display: flex;
+    }
+  }
   /* margin: auto; */
   &__link {
     font-family: Raleway;
@@ -43,6 +63,9 @@
     @media screen and(max-width:768px) {
       display: none;
     }
+    @media screen and(min-width:768px) {
+      display: flex;
+    }
   }
   &__contacts {
     /* display: flex; */
@@ -51,6 +74,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding: 0;
+    padding-right: 15px;
     @media screen and(max-width:768px) {
       display: none;
     }
@@ -111,7 +135,8 @@
 .container-header__icon {
   display: flex;
   margin-right: 50px;
-  justify-content: center;
+  margin-bottom: 10px;
+  /* justify-content: center; */
   align-items: center;
   &:last-child {
     margin-right: 0;
@@ -127,10 +152,21 @@
 .container-header__svg {
   fill: #757575;
 }
+
 .open-menu-btn {
   margin-left: auto;
 }
+.mob-container {
+  &_menu {
+    padding-right: 22px;
+  }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
 .mob-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -138,18 +174,47 @@
   top: 0;
   left: 0;
   z-index: 5;
+  &__item {
+    margin-bottom: 32px;
+  }
+  &_link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--first-text-color);
+  }
+}
+.close-menu-btn {
+  margin-left: auto;
+}
+.menu-contacts {
+  margin-top: auto;
+  &_tell {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  &_mail {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 .menu-networks {
   display: flex;
-  &_item {
-    list-style: none;
-  }
   &_link {
-    margin-left: 20px;
+    list-style: none;
+    margin-right: 20px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
