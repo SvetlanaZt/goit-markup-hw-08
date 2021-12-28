@@ -31,10 +31,8 @@
   }
 }
 .container-footer {
-  @media screen and(min-width:480px) {
-    padding-top: 60px;
-    margin-bottom: 60px;
-  }
+  padding-top: 60px;
+  margin-bottom: 60px;
   @media screen and(min-width:768px) {
     margin-right: 165px;
     padding-top: 0;
@@ -76,11 +74,9 @@
 }
 
 .container-footer__map {
-  @media screen and(min-width:480px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -93,11 +89,10 @@
   }
 }
 .container-footer__mail {
-  @media screen and(min-width:480px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media screen and(min-width:1200px) {
     justify-content: flex-start;
   }
@@ -115,9 +110,7 @@
 
 /*Присоединяйтесь**********/
 .container-contacts {
-  @media screen and(min-width:480px) {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
   @media screen and(min-width:768px) {
     margin-bottom: 0;
   }
@@ -130,11 +123,10 @@
   text-transform: uppercase;
   color: var(--second-text-color);
   margin-bottom: 20px;
-  @media screen and(min-width:480px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   /*   @media screen and(min-width:768px) {
     display: flex;
     justify-content: center;
@@ -149,10 +141,8 @@
 .container-contacts__list {
   display: flex;
   padding-left: 0;
-  @media screen and(min-width:480px) {
-    justify-content: center;
-    align-items: center;
-  }
+  justify-content: center;
+  align-items: center;
 }
 .container-contacts__item + .container-contacts__item {
   margin-left: 10px;
@@ -181,7 +171,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  @media screen and(max-width:1200px) {
+    margin-bottom: 20px;
+  }
 }
 .footer-input {
   @media screen and(min-width:768px) {
@@ -249,7 +241,9 @@
   margin-top: auto;
   margin-left: 10px;
   display: flex;
-  margin: auto;
+  @media screen and(max-width:1200px) {
+    margin: auto;
+  }
 }
 .footer-form__svg {
   fill: #ffffff;
