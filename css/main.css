@@ -1413,6 +1413,7 @@ h5 {
 }
 
 .container-tabs__button {
+  margin-bottom: 15px;
   font-family: Roboto;
   margin-right: 8px;
   font-style: normal;
@@ -1475,7 +1476,19 @@ h5 {
   display: block;
 }
 
+@media screen and (min-width: 480px) {
+  .container-img__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .container-img__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .container-img__item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
@@ -1506,8 +1519,9 @@ h5 {
 }
 
 .wrappen-img__img {
+  width: 100%;
   display: block;
-  max-width: 100%;
+  height: auto;
 }
 
 .wrappen-img__text {
