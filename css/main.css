@@ -475,6 +475,10 @@ h5 {
 
 .close-menu-btn {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding-top: 21px;
+  padding-right: 25px;
 }
 
 .menu-contacts {
@@ -544,7 +548,6 @@ h5 {
   padding-right: 60px;
   padding-left: 60px;
   margin-bottom: 60px;
-  /*  padding: 200px 0; */
 }
 
 @media screen and (min-width: 1200px) {
