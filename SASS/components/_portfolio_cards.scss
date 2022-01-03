@@ -17,6 +17,7 @@
     margin-bottom: 94px;
   }
   &__list {
+    padding-left: 0;
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;

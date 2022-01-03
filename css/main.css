@@ -255,7 +255,6 @@ h5 {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  /* margin: auto; */
 }
 
 @media screen and (min-width: 768px) {
@@ -315,6 +314,7 @@ h5 {
 .container-header__list {
   /* display: flex; */
   align-items: center;
+  padding-left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -435,6 +435,8 @@ h5 {
 
 .open-menu-btn {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
 }
 
 .mob-container_menu {
@@ -545,6 +547,13 @@ h5 {
   /*  padding: 200px 0; */
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/baner/baner-tell-2x.jpg);
@@ -586,6 +595,14 @@ h5 {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}
+
 .hero__button {
   cursor: pointer;
   /* display: flex; */
@@ -594,7 +611,7 @@ h5 {
   height: 50px;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1,8;
+  line-height: 1, 8;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -614,6 +631,9 @@ h5 {
 .container-about {
   width: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
   /* margin-bottom: 94px; */
 }
 
@@ -632,6 +652,7 @@ h5 {
 @media screen and (min-width: 1200px) {
   .container-about {
     width: 1200px;
+    padding-bottom: 0;
   }
 }
 
@@ -766,11 +787,17 @@ h5 {
 
 .section-group {
   background: #f5f4fa;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-group {
+    padding-top: 94px;
+  }
 }
 
 .section-group .container-group {
@@ -778,7 +805,7 @@ h5 {
 }
 
 .section-group .container-group__title {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -788,6 +815,12 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-group .container-group__title {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1452,6 +1485,10 @@ h5 {
     margin-right: auto;
     margin-bottom: 94px;
   }
+}
+
+.container-img__list {
+  padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {

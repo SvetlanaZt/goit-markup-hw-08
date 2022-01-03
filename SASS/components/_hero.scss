@@ -13,6 +13,10 @@
   padding-right: 60px;
   padding-left: 60px;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+  }
   /*  padding: 200px 0; */
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -53,6 +57,11 @@
     text-transform: uppercase;
     color: #ffffff;
     padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
 }
 
@@ -64,7 +73,7 @@
   height: 50px;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1,8;
+  line-height: 1, 8;
   align-items: center;
   justify-content: center;
   text-align: center;
