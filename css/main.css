@@ -698,12 +698,15 @@ h5 {
   }
 }
 
-.about-list__button {
+.about-list__block {
   width: 100%;
   height: 120px;
   border: none;
   margin-bottom: 30px;
-  /*  margin-bottom: 30px; */
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-list__title {
